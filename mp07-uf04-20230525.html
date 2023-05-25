@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exàmen 25 de maig de 2023</title>
+    <link rel="stylesheet" href="./css/estils.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Exàmen 25 de maig de 2023</h1>
+        <h2>Aquest examen consisteix en fer els següents passos:</h2>
+        <article class="tab">
+            <button class="tablinks" onclick="obreEnunciat(event, 'estatInicial')">
+                <h2>Estat inicial</h2>
+            </button>
+            <button class="tablinks" onclick="obreEnunciat(event, 'primerPas')">
+                <h2>1r pas</h2>
+            </button>
+            <button class="tablinks" onclick="obreEnunciat(event, 'segonPas')">
+                <h2>2n pas</h2>
+            </button>
+            <button class="tablinks" onclick="obreEnunciat(event, 'tercerPas')">
+                <h2>3r pas</h2>
+            </button>
+            <button class="tablinks" onclick="obreEnunciat(event, 'quartPas')">
+                <h2>4t pas</h2>
+            </button>
+            <button class="tablinks" onclick="obreEnunciat(event, 'cinquePas')">
+                <h2>5è pas</h2>
+            </button>
+        </article>
+        <article id="estatInicial" class="tabcontent">
+            <h1>Estat inicial</h1>
+            <h2>En començar l'activitat la configuració de l'adapatador de xarxa virtual ha d'estar com es
+                mostra a continuació:</h2>
+            <img src="./img/conf-virtual-inicial.png" alt="conf-virtual-inicial">
+        </article>
+        <article id="primerPas" class="tabcontent">
+            <h1>1r pas</h1>
+            <h2>Canvia el <strong>nom del servidor</strong></h2>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;<em><code>&lt;CognomAlumne&gt;</code></em><code>SMX2</code></h2>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on <em><code>&lt;CognomAlumne&gt;</code></em> és
+                <em>només</em> el <em>cognom de l'alumne</em> sense el nom.
+            </h3>
+        </article>
+        <article id="segonPas" class="tabcontent">
+            <h1>2n pas</h1>
+            <h2>Canvia l'<strong>adreça IP del servidor</strong>, perquè sigui fixa. Caldrà que
+                sigui la següent:</h2>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;<em><code>192.168.</code></em><code>&lt;NumeroMesNaixmanentAlumne&gt;</code><code>.1/24</code>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on
+                    <em><code>&lt;NumeroMesNaixmanentAlumne&gt;</code></em> és el <em>mes</em> de la <em>data de
+                        naixement</em> de l'alumne, <em>amb un zero davant si és inferior a 10.</em>
+                </h3>
+        </article>
+        <article id="tercerPas" class="tabcontent">
+            <h1>3r pas</h1>
+            <h2>Fer la instal·lació del <code>IIS</code> seguint el següent enllaç
+                <br>
+                <br>
+                <a href="./tutorial-instalacion-iis-windows.html">tutorial-instalacion-iis-windows.html</a>.
+            </h2>
+            <h3>Fent servir els els següents fitxers, que ja estan descarregats localment al servidor.</h3>
+            <ul>
+                <li>
+                    <h3><code>php-7.2.9-nts-Win32-VC15-x86.zip</code></h3>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3><code>VC_redist.x86.exe</code></h3>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3><code>test.html</code></h3>
+                </li>
+            </ul>
+        </article>
+        <article id="quartPas" class="tabcontent">
+            <h1>3r pas</h1>
+            <h2>Fer la instal·lació i configuració de <code>PHP</code> seguint el següent enllaç:
+                <br>
+                <br>
+                <a href="./instalar-php-en-windows-server-iis.html">instalar-php-en-windows-server-iis.html</a>.
+            </h2>
+                <h3>Fent servir els els següents fitxers, que ja estan descarregats localment al servidor.</h3>
+                <ul>
+                    <li>
+                        <h3><code>info.php</code></h3>
+                    </li>
+                </ul>
+            </article>
+            <article id="quartPas" class="tabcontent">
+                <h1>4t pas</h1>
+            </article>
+            <article id="cinquePas" class="tabcontent">
+                <h1>5èr pas</h1>
+                <h2>Ara, és el moment de moficiar la configuració de l'adapatador de xarxa virtual, cal posar-la a <code>NAT</code>.</h2>
+                <h2>Pren nota de l'hora, i executa el <code>Control</code>, com sempre.</h2>
+            </article>
+
+    </main>
+    <script src="./vert-tab.js"></script>
+</body>
+
+</html>
+<!-- https://techexpert.tips/es/windows-es/instalacion-de-iis-en-windows/
+
+https://techexpert.tips/es/windows-es/instalar-php-en-windows-server-iis -->

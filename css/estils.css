@@ -1,0 +1,45 @@
+html {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    margin-left: 30px;
+    /* background-color: #d4eef9; */
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2, h3{
+    font-weight: normal;
+}
+
+code{
+    background-color: lightgrey;
+    font-weight: bold;
+    font-size: 25px;
+} 
+
+img{
+    border: solid 4px black!important;
+    padding: 4px;
+    margin: 5px;
+} 
+
+div code.fons-gris{
+    font-size: larger;
+}
+
+.fons-gris{
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+    background-color: lightgrey;
+}
+
+.vermell{
+    color: red;
+}
+
+#content{
+    float: left;
+}
