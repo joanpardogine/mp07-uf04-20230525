@@ -109,25 +109,25 @@
       <p>Acceda al menú <code>Administrar</code> y haga clic en
         <code>Agregar roles y características</code>.
       </p>
-      <img src="/img/Windows-2012-add-role.png" alt="Windows-2012-add-role.png">
+      <img src="./img/Windows-2012-add-role.png" alt="Windows-2012-add-role.png">
       <p>Acceda a la pantalla <code>Roles de servidor</code>, seleccione la opción
         <code>Servidor web (<strong>IIS</strong>)</code> y haga clic
         en el botón <code>Siguiente</code>.
       </p>
-      <img src="/img/IIS-Installation.png" alt="IIS-Installation.png">
+      <img src="./img/IIS-Installation.png" alt="IIS-Installation.png">
       <p>En la siguiente pantalla, haga clic en el botón <code>Agregar características</code>.</p>
-      <img src="/img/IIS-Features.png" alt="IIS-Features.png">
+      <img src="./img/IIS-Features.png" alt="IIS-Features.png">
       <p>En la pantalla del servicio <code>IIS</code> , seleccione la opción <code>CGI</code> y
         finalice la
         instalación.</p>
-      <img src="/img/IIS-enable-CGI.png" alt="IIS-enable-CGI.png">
+      <img src="./img/IIS-enable-CGI.png" alt="IIS-enable-CGI.png">
       <p>El servidor <code>IIS</code> se instaló en su computadora, pero todavía necesitamos
         configurar la
         integración <code>PHP</code>.</p>
       <p>Abra la aplicación del administrador de <code>IIS</code> y acceda a la opción
         <code>Asignaciones de controlador</code>.
       </p>
-      <img src="/img/IIS-Handles-Mappings.png" alt="IIS-Handles-Mappings.png">
+      <img src="./img/IIS-Handles-Mappings.png" alt="IIS-Handles-Mappings.png">
       <p>En la parte derecha de la pantalla, seleccione la opción denominada:
         <code>Agregar asignación de módulos</code>.
       </p>
@@ -137,15 +137,15 @@
       • <b>Module</b> - <code>FastCGIModule</code><br>
       • <b>Executable</b> - <code>C:\php\php-cgi.exe</code><br>
       • <b>Name</b> - <code>PHP</code><br>
-      <img src="/img/PHP-Module-IIS.png" alt="PHP-Module-IIS.png">
+      <img src="./img/PHP-Module-IIS.png" alt="PHP-Module-IIS.png">
       <p>Haga clic en el botón denominado: <code>Solicitar restricciones</code>.</p>
       <p>Seleccione la opción <code>Archivo o Carpeta</code> y haga clic en el botón
         <code>Aceptar</code>.
       </p>
-      <img src="/img/IIS-PHP-Request-Restrictions.png" alt="IIS-PHP-Request-Restrictions.png">
+      <img src="./img/IIS-PHP-Request-Restrictions.png" alt="IIS-PHP-Request-Restrictions.png">
       <p>Haga clic en el botón <code>Aceptar</code>.</p>
       <p>Si se presenta el siguiente mensaje, haga clic en el botón <code>Sí</code>.</p>
-      <img src="/img/IIS-Module-mapping.png" alt="IIS-Module-mapping.png">
+      <img src="./img/IIS-Module-mapping.png" alt="IIS-Module-mapping.png">
       <p>Ahora, necesitamos configurar <code>IIS</code> para aceptar <code>index.php</code> como una
         página
         predeterminada.
@@ -153,7 +153,7 @@
       <p>Abra la aplicación del administrador de <code>IIS</code> y acceda a la opción
         <code>Documento predeterminado</code>.
       </p>
-      <img src="/img/IIS-default-page-PHP.png" alt="IIS-default-page-PHP.png">
+      <img src="./img/IIS-default-page-PHP.png" alt="IIS-default-page-PHP.png">
       <p>En la parte derecha de la pantalla, seleccione la opción denominada: <code>Añadir...</code></p>
       <p>En la ventana <code>Agregar documento predeterminado</code>, deberá introducir la siguiente
         información:
